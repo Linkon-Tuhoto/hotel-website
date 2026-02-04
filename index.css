@@ -1,0 +1,653 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #FF7A00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.image1 {
+    width: 40px;
+    height: auto;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.4s ease-in-out;
+}
+.navbar ul li a:hover {
+    color: rgb(193, 181, 169);
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+.navbar p {
+    font-family: fantasy;
+    font-size: 20px;
+    margin-left: -800px;
+}
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 30px;
+    transition: all 0.3s ease;
+}
+.headerPart {
+    background-color: #FF7A00;
+    padding:140px;
+}
+.firstWritings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerPart .firstWritings .image2 {
+    width: 310px;
+    height: auto;
+    margin: 40px -120px;
+}
+.headerPart .firstWritings p {
+    margin: -120px;
+}
+.headerPart .firstWritings .find {
+    font-size: 80px;
+    font-weight: 700;
+}
+.headerPart .firstWritings .favorite {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    word-spacing: 10px;
+}
+.headerPart .firstWritings .booking {
+    font-size: 25px;
+    color: white;
+    
+}
+.headerPart .buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.headerPart .buttons .button1 {
+    margin-left: -100px;
+}
+.headerPart .buttons .button2 {
+    margin-left: 100px;
+}
+.headerPart .buttons a {
+    text-decoration: none;
+    color: white;
+    /*
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s ease-out;*/
+}
+.headerPart button {
+    background-color: black;
+    border: none;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px 30px;
+    transition: 0.3s ease-out;
+}
+.headerPart button:hover {
+    background-color: rgb(102, 100, 100);
+}
+.aboutUs {
+    background-color: rgb(255, 255, 255);
+}
+.aboutUs h3 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 20px;
+}
+.aboutUs .hotel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 130px;
+}
+.aboutUs .hotel p {
+    font-size: 25px;
+    word-spacing: 5px;
+}
+.aboutUs .hotel .chefImage {
+    width: 350px;
+}
+.ourServices {
+    background-color: rgb(34, 33, 33);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-bottom: 40px;
+}
+.ourServices h3 {
+    color: white;
+}
+.ourServices img {
+    width: 300px;
+    height: 250px;
+}
+.whyUs {
+    background-color: rgb(234, 237, 237);
+}
+.mirage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.whyUs h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 50px;
+}
+.whyUs img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 40px;
+}
+.whyUs .why p {
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: rgb(249, 248, 247);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gallery img {
+    width: 300px;
+    height: 250px;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.contactUs {
+    background-color: rgb(200, 201, 198);
+}
+.contactUs h2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.contactUs .form {
+    
+    margin-left: 25%;
+    margin-right: 30%;
+    padding-bottom: 40px;
+}
+.contactUs .form label {
+    font-size: 20px;
+    margin-left: 20px;
+}
+.contactUs .form input{
+    border: 2px solid;
+    padding: 10px 200px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.contactUs .form textarea {
+    padding: 50px 200px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.contactUs .form button {
+    border: 2px solid;
+    padding: 10px;
+    background-color: rgb(255, 132, 0);
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.contactUs .form button:hover {
+    background-color: rgb(215, 153, 29);
+}
+.contactUs .form button a {
+    font-size: 30px;
+    text-decoration: none;
+}
+footer {
+    background-color: rgb(36, 36, 36);
+}
+.footerContainer {
+    display: flex;justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footerContainer .quickLinks h3 {
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+    font-size: 25px;
+}
+.footerContainer .quickLinks h3:hover {
+    color: #FF7A00;
+}
+.footerContainer .quickLinks .links li {
+    list-style: none;
+}
+.footerContainer .quickLinks .links a {
+    text-decoration: none;
+    color: #FF7A00;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+.footerContainer .quickLinks .links a:hover {
+    color: azure;
+}
+.footerContainer .Contactus p {
+    color: #FF7A00;
+    font-size: 20px;
+}
+.footerContainer .Contactus h3 {
+    color: aliceblue;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+.footerContainer .Contactus h3:hover {
+    color: #FF7A00;
+}
+.footerContainer .follow h3 {
+    color: aliceblue;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+.footerContainer .follow h3:hover {
+    color: #FF7A00;
+}
+.footerContainer .follow li {
+    list-style: none;
+}
+.footerContainer .follow a {
+    text-decoration: none;
+    color: #FF7A00;
+    transition: 0.3s ease;
+}
+.footerContainer .follow a:hover {
+    color: aliceblue;
+}
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    color: azure;
+}/*
+@media screen and (max-width: 960px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        z-index: -1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+    .navbar_menu:active {
+        background-color: aqua;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+    #spani .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: azure;
+    }
+    .navbar_links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+} */
+
+@media screen and (max-width: 760px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .navbar_menu {
+        position: fixed;
+        top: 0;
+        right: -90%;
+        width: 70%;
+        height: 60vh;
+        background-color:  rgb(255, 132, 0);
+        flex-direction: column;
+        padding: auto;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: repeat(1 1fr);
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .nav-toggle:checked ~ .navbar_menu {
+        right: 0;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+.firstWritings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerPart .firstWritings .image2 {
+    width: 90px;
+    height: auto;
+    margin: 40px -130px;
+}
+.headerPart .firstWritings p {
+    margin: -135px;
+}
+.headerPart .firstWritings .find {
+    font-size: 27px;
+    font-weight: 900;
+}
+.headerPart .firstWritings .favorite {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    word-spacing: 0px;
+}
+.headerPart .firstWritings .booking {
+    font-size: 13px;
+    color: white;
+    
+}
+.headerPart .buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.headerPart .buttons .button1 {
+    margin-left: -100px;
+}
+.headerPart .buttons .button2 {
+    margin-left: 20px;
+}/*
+.headerPart .buttons a {
+  padding: 10px 10px;
+  font-size: 10px;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s ease-out;
+}*/
+
+.headerPart button {
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: 0.3s ease-out;
+}
+.headerPart button:hover {
+    background-color: rgb(102, 100, 100);
+}
+.aboutUs {
+    background-color: rgb(255, 255, 255);
+}
+.aboutUs h3 {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 15px;
+}
+.aboutUs .hotel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.aboutUs .hotel p {
+    font-size: 20px;
+    word-spacing: 0px;
+}
+.aboutUs .hotel .chefImage {
+    width: 250px;
+}
+.ourServices {
+    background-color: rgb(34, 33, 33);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding-bottom: 30px;
+}
+.ourServices h3 {
+    color: white;
+}
+.ourServices img {
+    width: 100px;
+    height: 90px;
+}
+.whyUs {
+    background-color: rgb(234, 237, 237);
+}
+.mirage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.whyUs h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.whyUs img {
+    width: 90px;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.whyUs .why p {
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: rgb(249, 248, 247);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.gallery img {
+    width: 100px;
+    height: 90px;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.contactUs {
+    background-color: rgb(200, 201, 198);
+}
+.contactUs h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.contactUs .form {
+    
+    margin-left: 3%;
+    margin-right: 20%;
+    padding-bottom: 30px;
+}
+.contactUs .form label {
+    font-size: 20px;
+    margin-left: 0px;
+}
+.contactUs .form input{
+    border: 2px solid;
+    padding: 8px 50px;
+    border-radius: 20px;
+    margin-left: 0px;
+}
+.contactUs .form textarea {
+    padding: 50px 50px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.contactUs .form button {
+    border: 2px solid;
+    padding: 10px;
+    background-color: rgb(255, 132, 0);
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.contactUs .form button:hover {
+    background-color: rgb(215, 153, 29);
+}
+.contactUs .form button a {
+    font-size: 15px;
+    text-decoration: none;
+}
+footer {
+    background-color: rgb(36, 36, 36);
+}
+.footerContainer {
+    display: flex;justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.footerContainer .quickLinks h3 {
+    color: aliceblue;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}
+.footerContainer .quickLinks h3:hover {
+    color: #FF7A00;
+}
+.footerContainer .quickLinks .links li {
+    list-style: none;
+}
+.footerContainer .quickLinks .links a {
+    text-decoration: none;
+    color: #FF7A00;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+.footerContainer .quickLinks .links a:hover {
+    color: azure;
+}
+.footerContainer .Contactus p {
+    color: #FF7A00;
+    font-size: 12px;
+}
+.footerContainer .Contactus h3 {
+    color: aliceblue;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.footerContainer .Contactus h3:hover {
+    color: #FF7A00;
+}
+.footerContainer .follow h3 {
+    color: aliceblue;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.footerContainer .follow h3:hover {
+    color: #FF7A00;
+}
+.footerContainer .follow li {
+    list-style: none;
+}
+.footerContainer .follow a {
+    font-size: 12PX;
+    text-decoration: none;
+    color: #FF7A00;
+    transition: 0.3s ease;
+}
+.footerContainer .follow a:hover {
+    color: aliceblue;
+}
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: azure;
+}
+}
